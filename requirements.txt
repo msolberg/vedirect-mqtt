@@ -1,0 +1,7 @@
+awscrt
+awsiot
+awsiotsdk
+asyncio
+click
+pyserial
+pyserial-asyncio
