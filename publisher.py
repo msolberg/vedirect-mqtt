@@ -108,7 +108,7 @@ def read_victron_data(port_name, baud_rate=19200):
         print(f"Connected to {port_name} at {baud_rate} baud.")
         chunk = 0
         while chunk < 2:
-            line = ser.readline().decode('utf-8').strip()
+            line = ser.readline().decode('utf-8', errors='ignore').strip()
             if line:
                 output = line.split()
                 if output[0] == 'Checksum':
